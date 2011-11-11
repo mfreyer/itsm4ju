@@ -1,0 +1,41 @@
+1. Installing
+
+- download Cygwin from http://www.cygwin.com/
+- install cygwin
+- install needed packages
+  - ruby (supported version)
+  - vim 
+  - git
+  - git-completion
+  - (git-gui)
+  - curl
+  - libssqlite3-devel
+  - libssqlite3_0
+  - sqlite3	
+  - gcc
+  - libgcc1
+  - make
+  - openssh (to make key pair) for git
+# everything that follows a $ needs to be run in cygwin
+- download rubygems from http://rubyforge.org/frs/?group_id=126
+- put into Cygwin_Path\home\username
+$ tar zxf rubygemsXXX.tar
+- cd into it
+$ ruby setup.rb
+$ gem install rails
+- check everything is ready:
+  $ ruby -v
+  $ gem -v
+  $ rails -v
+  $ git --version
+  
+2. Make keypair for git
+  
+- make git keypair
+- see http://help.github.com/win-set-up-git/ for key setup
+- install openssh
+- run ssh-keygen -t rsa -C "matthias.freyer@gmx.ch"
+
+3. install keypair for git
+
+:: following is done in cygwin shell
