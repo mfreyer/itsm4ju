@@ -1,0 +1,50 @@
+1. Create Directory C:\RubyonRails
+   (everybody recommends NOT installing ruby / rails components to a path with spaces, like C:\Program Files)
+2. install ruby using rubyinstaller-1.9.2-p290.exe $
+   from http://rubyinstaller.org/downloads/ 
+   to C:\RubyonRails\Ruby192
+	add executables to path
+	associate extensions
+3. Reboot
+   run ruby -v to check ruby installation	
+4. Install Ruby DevKit http://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20110712-1620-sfx.exe
+   from http://rubyinstaller.org/downloads/:
+   - download
+   - run --> extract to C:\RubyonRails\DevKit
+   - do:
+		- cd C:\RubyonRails\DevKit
+		- ruby dk.rb init
+		- ruby dk.rb install
+   
+   
+   
+5. install ruby gems:
+	download from http://rubyforge.org/frs/?group_id=126
+	extract (e.g. 7Zip) to C:\RubyonRails\rubygems-1.8.10
+   cd C:\RubyonRails\rubygems-1.8.10
+   ruby setup.rb
+   --> installs automatically to ruby dir, in this case C:/RubyonRails/Ruby192/bin/gem
+5. install rails:
+	gem install rails
+	gem install sqlite3
+   
+(6. install Aptana Studio 3 with RadRails)
+
+X. Additional findings
+
+Problem:
+rake db:migrate yields:
+	rake aborted!
+	uninitialized constant Rake::DSL
+Solution:
+1. add the following line to "Gemfile" in App root:
+   gem "rake", "0.8.7"
+2. do "bundle update rake"
+3. do "bundle show rake" --> should be 0.8.7 now.
+4. "rake db:migrate" again.
+
+
+
+
+
+	

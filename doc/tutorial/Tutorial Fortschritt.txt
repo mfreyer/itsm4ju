@@ -1,0 +1,9 @@
+Lesson 1 - From Zero to Deploy
+ruby_0100.flv	Objectives					gesehen		notiert
+ruby_0101.flv	From Zero to Deploy			gesehen		notiert
+ruby_0102.flv	The First Application		gesehen		notiert
+ruby_0103.flv	Version Control with Git	gesehen		notiert
+ruby_0104.flv	Deploy to Heroku			übersprungen
+Lesson 2 - A Demo App
+ruby_2000.flv	Objectives					gesehen		notiert
+

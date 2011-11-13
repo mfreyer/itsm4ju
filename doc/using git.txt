@@ -1,0 +1,35 @@
+ ## create new repository
+ 
+ $ git init
+# modify .gitignore file
+
+ ## add new files & commit changes to current branch
+ 
+$ git add . # add all files
+$ git commit -a -m "Comment"
+
+ ## add github repository
+  
+$ git remote add origin git@github.com:<username>/<appname>.git
+
+ ## push to github repository
+
+$ git push origin master
+
+ ## create a new branch
+ 
+$ git checkout -b <branchname>
+
+ ## merge  branch to master
+ 
+$ git checkout master
+$ git merge <branchname>
+
+ ## delete branch 
+ 
+$ git branch -d modify-README
+
+ ## helpful commands
+ 
+$ git log - see the log of past commits
+$ git branch - see current branches
