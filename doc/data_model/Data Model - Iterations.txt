@@ -1,0 +1,25 @@
+*******************************
+* 1. Iteration                *
+*                             *
+* Core Module: Organizational *
+*******************************
+
++---------------------------+
+¦ persons                   ¦
++---------------------------+
+¦ PK id	          : integer ¦
+¦ FK organization : integer ¦ -> organizations.id
+¦    firstname    : string  ¦
+¦    lastname     : string  ¦
+¦    email        : string  ¦
++---------------------------+
+
++---------------------+
+¦ organizations       ¦
++---------------------+
+¦ PK id		: integer ¦
+¦ FK parent : integer ¦ -> organizations.id
+¦    title  : string  ¦
++---------------------+
+
+
