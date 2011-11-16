@@ -1,16 +1,26 @@
-+-----------------+
-¦ persons         ¦
-+-----------------+
-¦ PK id           ¦
-¦    firstname    ¦
-¦    lastname     ¦
-¦    email        ¦
-+-----------------+
++---------------------------+
+¦ persons                   ¦
++---------------------------+
+¦ PK id	          : integer ¦
+¦ FK organization : integer ¦ -> organizations.id (restrict)
+¦    firstname    : string  ¦
+¦    lastname     : string  ¦
+¦    email        : string  ¦
+¦    address      : integer ¦ -> address.id (destroy)
++---------------------------+
 
-+-------------------------------+
-¦ organizations                 ¦
-+-------------------------------+
-¦ PK id                         ¦
-¦ FK parent -> organizations.id ¦   
-¦    title                      ¦
-+-------------------------------+
+
++----------------------+
+¦ organizations        ¦
++----------------------+
+¦ PK id		 : integer ¦
+¦ FK parent  : integer ¦ -> organizations.id (restrict)
+¦    title   : string  ¦
+¦    address : integer ¦ -> addresss.id (destroy)
++----------------------+
+
+
+
+
+
+
